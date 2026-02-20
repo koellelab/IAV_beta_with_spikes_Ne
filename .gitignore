@@ -1,3 +1,5 @@
 03_data/all_aln_map.tsv
 03_data/data/genomes/all_aln_map.tsv
 03_data/data/use_dp.csv
+.DS_Store
+**/.DS_Store
