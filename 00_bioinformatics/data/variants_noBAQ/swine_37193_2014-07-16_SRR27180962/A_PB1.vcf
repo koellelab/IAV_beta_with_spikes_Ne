@@ -1,0 +1,26 @@
+##fileformat=VCFv4.0
+##fileDate=20251016
+##source=lofreq call -B -f data/IRMA/swine_37193_2014-07-16_SRR27180962/A_PB1.fasta data/aligned_reads/swine_37193_2014-07-16_SRR27180962/A_PB1.bam 
+##reference=data/IRMA/swine_37193_2014-07-16_SRR27180962/A_PB1.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_58,Description="Minimum SNV Quality (Phred) 58">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_PB1	233	.	A	C	917	PASS	DP=29777;AF=0.013165;SB=407;DP4=17795,11520,105,287
+A_PB1	1370	.	A	G	10903	PASS	DP=24820;AF=0.046656;SB=1163;DP4=11846,11728,198,960
+A_PB1	1376	.	T	G	831	PASS	DP=26039;AF=0.008795;SB=14;DP4=14128,11627,109,120
+A_PB1	1378	.	C	A	473	PASS	DP=25937;AF=0.008559;SB=3;DP4=14071,11565,127,95
+A_PB1	1408	.	T	C	211	PASS	DP=31938;AF=0.005448;SB=44;DP4=19860,11795,135,39
+A_PB1	1428	.	C	A	79	PASS	DP=33830;AF=0.004493;SB=11;DP4=20554,13033,104,48
+A_PB1	1471	.	G	T	111	PASS	DP=38164;AF=0.005765;SB=23;DP4=22951,14976,154,66
+A_PB1	1921	.	A	G	4143	PASS	DP=43375;AF=0.020496;SB=1449;DP4=17280,25073,739,150
+A_PB1	1923	.	C	T	6514	PASS	DP=43490;AF=0.023707;SB=1433;DP4=16163,26192,801,230
+A_PB1	2102	.	C	A	98	PASS	DP=33071;AF=0.008315;SB=92;DP4=10580,22168,139,136

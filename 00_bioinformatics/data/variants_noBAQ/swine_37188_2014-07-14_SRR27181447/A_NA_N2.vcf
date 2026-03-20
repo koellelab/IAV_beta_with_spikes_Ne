@@ -1,0 +1,26 @@
+##fileformat=VCFv4.0
+##fileDate=20251014
+##source=lofreq call -B -f data/IRMA/swine_37188_2014-07-14_SRR27181447/A_NA_N2.fasta data/aligned_reads/swine_37188_2014-07-14_SRR27181447/A_NA_N2.bam 
+##reference=data/IRMA/swine_37188_2014-07-14_SRR27181447/A_NA_N2.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_56,Description="Minimum SNV Quality (Phred) 56">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_NA_N2	249	.	A	G	796	PASS	DP=50697;AF=0.009389;SB=2;DP4=32865,17242,318,158
+A_NA_N2	306	.	G	C	49314	PASS	DP=68157;AF=0.117141;SB=38;DP4=33354,26620,4620,3364
+A_NA_N2	336	.	G	A	49314	PASS	DP=75084;AF=0.106334;SB=69;DP4=32991,33947,4186,3798
+A_NA_N2	457	.	A	G	171	PASS	DP=63595;AF=0.003286;SB=0;DP4=34752,28563,116,93
+A_NA_N2	458	.	C	T	1914	PASS	DP=63744;AF=0.008691;SB=59;DP4=34713,28403,247,307
+A_NA_N2	910	.	G	T	240	PASS	DP=54429;AF=0.012199;SB=618;DP4=26039,27659,115,549
+A_NA_N2	1071	.	A	G	2578	PASS	DP=52369;AF=0.012336;SB=68;DP4=25456,26136,251,395
+A_NA_N2	1072	.	A	G	49314	PASS	DP=52297;AF=0.168518;SB=1002;DP4=22211,20972,3438,5375
+A_NA_N2	1180	.	A	G	61	PASS	DP=37814;AF=0.006876;SB=2;DP4=13463,23918,98,162
+A_NA_N2	1376	.	C	T	204	PASS	DP=11685;AF=0.016003;SB=24;DP4=1554,9930,12,175

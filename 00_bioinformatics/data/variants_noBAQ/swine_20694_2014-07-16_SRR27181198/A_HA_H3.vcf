@@ -1,0 +1,26 @@
+##fileformat=VCFv4.0
+##fileDate=20251014
+##source=lofreq call -B -f data/IRMA/swine_20694_2014-07-15_SRR27181646/A_HA_H3.fasta data/aligned_reads/swine_20694_2014-07-16_SRR27181198/A_HA_H3.bam 
+##reference=data/IRMA/swine_20694_2014-07-15_SRR27181646/A_HA_H3.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_57,Description="Minimum SNV Quality (Phred) 57">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_HA_H3	126	.	G	A	4009	PASS	DP=19209;AF=0.040710;SB=41;DP4=11833,6339,563,219
+A_HA_H3	686	.	T	C	9598	PASS	DP=28365;AF=0.034127;SB=7;DP4=12977,14376,482,486
+A_HA_H3	706	.	A	G	6745	PASS	DP=28316;AF=0.025427;SB=36;DP4=12759,14792,283,437
+A_HA_H3	1052	.	T	A	99	PASS	DP=20300;AF=0.005025;SB=90;DP4=10718,9460,84,18
+A_HA_H3	1053	.	C	A	177	PASS	DP=20304;AF=0.005418;SB=48;DP4=10708,9479,81,29
+A_HA_H3	1088	.	T	C	85	PASS	DP=21004;AF=0.004856;SB=3;DP4=11494,9370,60,42
+A_HA_H3	1089	.	G	A	172	PASS	DP=21017;AF=0.004901;SB=15;DP4=11537,9346,68,35
+A_HA_H3	1111	.	C	T	1978	PASS	DP=17794;AF=0.018995;SB=5;DP4=9538,7872,175,163
+A_HA_H3	1225	.	C	T	162	PASS	DP=19531;AF=0.007014;SB=31;DP4=9443,9896,87,50
+A_HA_H3	1227	.	T	A	4782	PASS	DP=19471;AF=0.030866;SB=31;DP4=9214,9635,252,349

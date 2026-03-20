@@ -1,0 +1,25 @@
+##fileformat=VCFv4.0
+##fileDate=20251015
+##source=lofreq call -B -f data/IRMA/swine_37331_2014-07-16_SRR27181389/A_NA_N2.fasta data/aligned_reads/swine_37331_2014-07-16_SRR27181389/A_NA_N2.bam 
+##reference=data/IRMA/swine_37331_2014-07-16_SRR27181389/A_NA_N2.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_56,Description="Minimum SNV Quality (Phred) 56">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_NA_N2	104	.	T	C	103	PASS	DP=55563;AF=0.014812;SB=71;DP4=39430,15188,662,161
+A_NA_N2	185	.	A	G	465	PASS	DP=64886;AF=0.008322;SB=4;DP4=41137,23104,356,184
+A_NA_N2	557	.	G	A	186	PASS	DP=107546;AF=0.004417;SB=0;DP4=57515,49284,253,222
+A_NA_N2	569	.	T	C	74	PASS	DP=107334;AF=0.002366;SB=0;DP4=53502,53460,128,126
+A_NA_N2	736	.	G	T	49314	PASS	DP=74174;AF=0.233141;SB=51;DP4=27316,29485,8654,8639
+A_NA_N2	821	.	A	G	2278	PASS	DP=80629;AF=0.009662;SB=9;DP4=34691,44986,317,462
+A_NA_N2	949	.	G	T	141	PASS	DP=69240;AF=0.012103;SB=1593;DP4=41594,26775,129,709
+A_NA_N2	1055	.	G	A	2237	PASS	DP=78645;AF=0.008939;SB=2;DP4=43847,33994,404,299
+A_NA_N2	1277	.	T	C	49314	PASS	DP=56993;AF=0.124296;SB=0;DP4=14349,35495,2047,5037

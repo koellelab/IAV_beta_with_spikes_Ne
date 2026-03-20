@@ -1,0 +1,25 @@
+##fileformat=VCFv4.0
+##fileDate=20251016
+##source=lofreq call -B -f data/IRMA/swine_37318_2014-07-16_SRR27180931/A_HA_H3.fasta data/aligned_reads/swine_37318_2014-07-16_SRR27180931/A_HA_H3.bam 
+##reference=data/IRMA/swine_37318_2014-07-16_SRR27180931/A_HA_H3.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_57,Description="Minimum SNV Quality (Phred) 57">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_HA_H3	435	.	G	A	49314	PASS	DP=41685;AF=0.166871;SB=78;DP4=15988,18665,3468,3488
+A_HA_H3	663	.	C	A	352	PASS	DP=51073;AF=0.004699;SB=14;DP4=25396,25418,103,137
+A_HA_H3	959	.	C	A	77	PASS	DP=34477;AF=0.004583;SB=79;DP4=15670,18638,37,121
+A_HA_H3	968	.	G	T	60	PASS	DP=36410;AF=0.003680;SB=11;DP4=17885,18364,77,57
+A_HA_H3	993	.	A	T	66	PASS	DP=33122;AF=0.004197;SB=44;DP4=17915,15046,51,88
+A_HA_H3	1047	.	C	A	61	PASS	DP=32253;AF=0.003721;SB=45;DP4=17202,14912,87,33
+A_HA_H3	1052	.	T	A	230	PASS	DP=33023;AF=0.005542;SB=167;DP4=17128,15677,151,32
+A_HA_H3	1053	.	C	A	353	PASS	DP=33023;AF=0.005996;SB=79;DP4=17116,15677,143,55
+A_HA_H3	1313	.	C	A	85	PASS	DP=32929;AF=0.006347;SB=250;DP4=17343,15356,37,172

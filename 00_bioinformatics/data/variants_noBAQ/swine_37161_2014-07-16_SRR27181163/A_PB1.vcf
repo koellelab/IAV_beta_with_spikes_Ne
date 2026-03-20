@@ -1,0 +1,26 @@
+##fileformat=VCFv4.0
+##fileDate=20251015
+##source=lofreq call -B -f data/IRMA/swine_37161_2014-07-16_SRR27181163/A_PB1.fasta data/aligned_reads/swine_37161_2014-07-16_SRR27181163/A_PB1.bam 
+##reference=data/IRMA/swine_37161_2014-07-16_SRR27181163/A_PB1.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_58,Description="Minimum SNV Quality (Phred) 58">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_PB1	384	.	T	A	68	PASS	DP=8210;AF=0.013520;SB=17;DP4=2860,5224,27,84
+A_PB1	504	.	G	A	6328	PASS	DP=4356;AF=0.118457;SB=5;DP4=1534,2276,220,296
+A_PB1	1760	.	T	C	9546	PASS	DP=4804;AF=0.135304;SB=15;DP4=2017,2093,349,301
+A_PB1	1967	.	A	G	3833	PASS	DP=11086;AF=0.053942;SB=289;DP4=6023,4358,481,117
+A_PB1	2032	.	A	G	142	PASS	DP=19865;AF=0.032016;SB=261;DP4=11393,7781,507,129
+A_PB1	2034	.	C	A	1605	PASS	DP=21309;AF=0.047679;SB=249;DP4=11889,8362,760,256
+A_PB1	2035	.	C	T	1187	PASS	DP=21507;AF=0.045474;SB=251;DP4=12050,8442,736,242
+A_PB1	2079	.	C	G	74	PASS	DP=31090;AF=0.029366;SB=292;DP4=15726,13986,654,259
+A_PB1	2080	.	A	G	133	PASS	DP=31314;AF=0.030625;SB=182;DP4=15735,13997,646,313
+A_PB1	2083	.	C	A	1374	PASS	DP=32694;AF=0.048633;SB=185;DP4=16224,14293,1027,563

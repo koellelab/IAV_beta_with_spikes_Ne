@@ -1,0 +1,26 @@
+##fileformat=VCFv4.0
+##fileDate=20251015
+##source=lofreq call -B -f data/IRMA/swine_37248_2014-07-15_SRR27181624/A_PB1.fasta data/aligned_reads/swine_37248_2014-07-17_SRR27181347/A_PB1.bam 
+##reference=data/IRMA/swine_37248_2014-07-15_SRR27181624/A_PB1.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_58,Description="Minimum SNV Quality (Phred) 58">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_PB1	386	.	A	G	924	PASS	DP=33511;AF=0.010594;SB=39;DP4=14562,18519,120,235
+A_PB1	1366	.	C	A	103	PASS	DP=29799;AF=0.004463;SB=27;DP4=13625,16024,43,90
+A_PB1	1370	.	A	G	43404	PASS	DP=29160;AF=0.096262;SB=1952;DP4=12766,13500,565,2242
+A_PB1	1376	.	T	G	4645	PASS	DP=30153;AF=0.019335;SB=133;DP4=16187,13303,228,355
+A_PB1	1378	.	C	A	2774	PASS	DP=29970;AF=0.017150;SB=67;DP4=16074,13242,222,292
+A_PB1	1408	.	T	C	171	PASS	DP=35806;AF=0.004552;SB=79;DP4=21507,14060,133,30
+A_PB1	1425	.	C	A	102	PASS	DP=38258;AF=0.003999;SB=5;DP4=22600,15447,84,69
+A_PB1	1694	.	A	G	177	PASS	DP=57629;AF=0.003106;SB=0;DP4=33574,23839,104,75
+A_PB1	1777	.	G	A	699	PASS	DP=58532;AF=0.006116;SB=45;DP4=32104,25987,237,121
+A_PB1	1819	.	C	A	1108	PASS	DP=62054;AF=0.008106;SB=92;DP4=34233,27258,210,293

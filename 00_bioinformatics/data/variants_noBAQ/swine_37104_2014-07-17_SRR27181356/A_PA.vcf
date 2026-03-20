@@ -1,0 +1,26 @@
+##fileformat=VCFv4.0
+##fileDate=20251016
+##source=lofreq call -B -f data/IRMA/swine_37104_2014-07-15_SRR27181639/A_PA.fasta data/aligned_reads/swine_37104_2014-07-17_SRR27181356/A_PA.bam 
+##reference=data/IRMA/swine_37104_2014-07-15_SRR27181639/A_PA.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_58,Description="Minimum SNV Quality (Phred) 58">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_PA	138	.	C	T	124	PASS	DP=35041;AF=0.010017;SB=62;DP4=19490,15139,244,107
+A_PA	143	.	A	T	58	PASS	DP=36222;AF=0.007206;SB=4;DP4=20142,15712,154,107
+A_PA	146	.	C	T	248	PASS	DP=35812;AF=0.008098;SB=80;DP4=19545,15862,208,82
+A_PA	648	.	C	A	203	PASS	DP=30299;AF=0.005578;SB=68;DP4=16108,14005,56,113
+A_PA	739	.	T	G	203	PASS	DP=28604;AF=0.005034;SB=12;DP4=13938,14490,59,85
+A_PA	1098	.	G	A	137	PASS	DP=30090;AF=0.004320;SB=13;DP4=15220,14701,78,52
+A_PA	1199	.	C	A	208	PASS	DP=30693;AF=0.005604;SB=66;DP4=16012,14504,56,116
+A_PA	1259	.	C	T	73	PASS	DP=37219;AF=0.003627;SB=4;DP4=15828,21203,63,72
+A_PA	1281	.	G	C	65	PASS	DP=37289;AF=0.003030;SB=16;DP4=15986,21159,61,52
+A_PA	1655	.	C	A	173	PASS	DP=35434;AF=0.004657;SB=32;DP4=16091,19167,53,112

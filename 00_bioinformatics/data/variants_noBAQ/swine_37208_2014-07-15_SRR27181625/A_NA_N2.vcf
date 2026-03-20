@@ -1,0 +1,25 @@
+##fileformat=VCFv4.0
+##fileDate=20251014
+##source=lofreq call -B -f data/IRMA/swine_37208_2014-07-15_SRR27181625/A_NA_N2.fasta data/aligned_reads/swine_37208_2014-07-15_SRR27181625/A_NA_N2.bam 
+##reference=data/IRMA/swine_37208_2014-07-15_SRR27181625/A_NA_N2.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_56,Description="Minimum SNV Quality (Phred) 56">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_NA_N2	61	.	T	C	2757	PASS	DP=17744;AF=0.049312;SB=22;DP4=13607,3065,746,129
+A_NA_N2	87	.	G	A	10791	PASS	DP=26620;AF=0.063336;SB=129;DP4=18198,6524,1375,311
+A_NA_N2	163	.	C	T	4996	PASS	DP=35259;AF=0.024561;SB=15;DP4=22426,11875,535,331
+A_NA_N2	266	.	A	G	100	PASS	DP=41281;AF=0.004215;SB=1;DP4=26993,14058,112,62
+A_NA_N2	417	.	A	G	118	PASS	DP=55255;AF=0.004108;SB=12;DP4=22868,32061,80,147
+A_NA_N2	424	.	A	G	64	PASS	DP=49910;AF=0.006812;SB=5;DP4=20116,29197,129,211
+A_NA_N2	610	.	A	G	2737	PASS	DP=46694;AF=0.012400;SB=5;DP4=19317,26723,230,349
+A_NA_N2	845	.	C	T	23514	PASS	DP=41229;AF=0.048825;SB=5;DP4=17302,21823,866,1147
+A_NA_N2	1173	.	G	A	91	PASS	DP=25158;AF=0.006519;SB=0;DP4=9410,15488,61,103

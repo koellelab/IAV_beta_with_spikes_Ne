@@ -1,0 +1,32 @@
+##fileformat=VCFv4.0
+##fileDate=20251015
+##source=lofreq call -B -f data/IRMA/swine_20397_2014-07-16_SRR27181185/A_PB1.fasta data/aligned_reads/swine_20397_2014-07-17_SRR27181581/A_PB1.bam 
+##reference=data/IRMA/swine_20397_2014-07-16_SRR27181185/A_PB1.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_58,Description="Minimum SNV Quality (Phred) 58">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_PB1	279	.	T	C	119	PASS	DP=14462;AF=0.008021;SB=0;DP4=7585,6748,61,55
+A_PB1	807	.	C	T	7410	PASS	DP=11293;AF=0.053662;SB=0;DP4=5679,4982,321,285
+A_PB1	1038	.	C	T	101	PASS	DP=10357;AF=0.006662;SB=5;DP4=6062,4202,36,33
+A_PB1	1067	.	T	C	338	PASS	DP=12134;AF=0.008983;SB=4;DP4=6385,5613,53,56
+A_PB1	1202	.	C	T	354	PASS	DP=10901;AF=0.010366;SB=9;DP4=5528,5237,49,64
+A_PB1	1214	.	C	A	945	PASS	DP=10777;AF=0.018558;SB=8;DP4=5315,5256,90,110
+A_PB1	1370	.	A	G	3957	PASS	DP=11313;AF=0.039424;SB=200;DP4=5183,5652,115,331
+A_PB1	1376	.	T	G	480	PASS	DP=11329;AF=0.009180;SB=6;DP4=5648,5557,46,58
+A_PB1	1378	.	C	A	234	PASS	DP=11295;AF=0.008853;SB=0;DP4=5620,5539,49,51
+A_PB1	1413	.	G	A	1585	PASS	DP=13503;AF=0.019181;SB=12;DP4=7773,5440,168,91
+A_PB1	1625	.	C	A	487	PASS	DP=17568;AF=0.008937;SB=8;DP4=9072,8326,72,85
+A_PB1	1679	.	G	A	1315	PASS	DP=23107;AF=0.015536;SB=22;DP4=12275,10387,221,138
+A_PB1	1686	.	T	C	773	PASS	DP=22070;AF=0.016085;SB=1;DP4=12619,9015,211,144
+A_PB1	1778	.	A	G	325	PASS	DP=22747;AF=0.007254;SB=4;DP4=12060,10481,82,83
+A_PB1	1875	.	C	A	79	PASS	DP=22638;AF=0.006317;SB=69;DP4=10806,11521,101,42
+A_PB1	1905	.	A	G	257	PASS	DP=23734;AF=0.009354;SB=11;DP4=11405,12058,94,128

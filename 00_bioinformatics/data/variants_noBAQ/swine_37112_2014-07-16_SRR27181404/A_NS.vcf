@@ -1,0 +1,26 @@
+##fileformat=VCFv4.0
+##fileDate=20251016
+##source=lofreq call -B -f data/IRMA/swine_37112_2014-07-16_SRR27181404/A_NS.fasta data/aligned_reads/swine_37112_2014-07-16_SRR27181404/A_NS.bam 
+##reference=data/IRMA/swine_37112_2014-07-16_SRR27181404/A_NS.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_54,Description="Minimum SNV Quality (Phred) 54">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_NS	39	.	T	C	835	PASS	DP=76494;AF=0.020080;SB=14;DP4=64580,9658,1364,172
+A_NS	97	.	C	T	280	PASS	DP=148997;AF=0.009584;SB=24;DP4=116714,30673,1176,252
+A_NS	228	.	A	C	1090	PASS	DP=155783;AF=0.006394;SB=411;DP4=69343,85110,661,335
+A_NS	369	.	C	T	86	PASS	DP=238665;AF=0.003574;SB=9;DP4=120721,116645,411,442
+A_NS	385	.	A	G	49314	PASS	DP=251295;AF=0.236113;SB=1863;DP4=103025,88269,27891,31443
+A_NS	407	.	T	C	1244	PASS	DP=209135;AF=0.005456;SB=0;DP4=102780,104872,569,572
+A_NS	417	.	C	T	160	PASS	DP=212456;AF=0.004354;SB=40;DP4=102444,108627,389,536
+A_NS	425	.	A	G	212	PASS	DP=219094;AF=0.004085;SB=20;DP4=103461,114300,386,509
+A_NS	490	.	C	G	2981	PASS	DP=194312;AF=0.008646;SB=95;DP4=84692,107526,612,1068
+A_NS	542	.	T	C	369	PASS	DP=167326;AF=0.003962;SB=0;DP4=77243,89230,307,356

@@ -1,0 +1,26 @@
+##fileformat=VCFv4.0
+##fileDate=20251014
+##source=lofreq call -B -f data/IRMA/swine_37279_2014-07-12_SRR27181009/A_PB1.fasta data/aligned_reads/swine_37279_2014-07-16_SRR27181197/A_PB1.bam 
+##reference=data/IRMA/swine_37279_2014-07-12_SRR27181009/A_PB1.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_58,Description="Minimum SNV Quality (Phred) 58">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_PB1	222	.	T	C	80	PASS	DP=5082;AF=0.015939;SB=1;DP4=2562,2420,44,37
+A_PB1	266	.	T	C	107	PASS	DP=4215;AF=0.021115;SB=22;DP4=1966,2156,56,33
+A_PB1	697	.	A	G	97	PASS	DP=1882;AF=0.015940;SB=2;DP4=1051,798,19,11
+A_PB1	1370	.	A	G	3771	PASS	DP=2492;AF=0.101926;SB=252;DP4=1113,1117,42,212
+A_PB1	1376	.	T	G	670	PASS	DP=2589;AF=0.028196;SB=2;DP4=1389,1113,38,35
+A_PB1	1378	.	C	A	497	PASS	DP=2617;AF=0.025220;SB=0;DP4=1404,1116,38,28
+A_PB1	1378	.	C	G	120	PASS	DP=2617;AF=0.011846;SB=9;DP4=1404,1116,22,9
+A_PB1	1405	.	A	G	69	PASS	DP=4896;AF=0.005106;SB=18;DP4=3357,1512,23,2
+A_PB1	1422	.	A	G	72	PASS	DP=5472;AF=0.005117;SB=10;DP4=3795,1647,24,4
+A_PB1	1626	.	A	G	8002	PASS	DP=10689;AF=0.052110;SB=16;DP4=5406,4710,270,287

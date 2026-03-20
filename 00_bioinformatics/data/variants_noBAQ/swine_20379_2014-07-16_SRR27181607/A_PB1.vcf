@@ -1,0 +1,26 @@
+##fileformat=VCFv4.0
+##fileDate=20251014
+##source=lofreq call -B -f data/IRMA/swine_20379_2014-07-16_SRR27181607/A_PB1.fasta data/aligned_reads/swine_20379_2014-07-16_SRR27181607/A_PB1.bam 
+##reference=data/IRMA/swine_20379_2014-07-16_SRR27181607/A_PB1.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_57,Description="Minimum SNV Quality (Phred) 57">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_PB1	1376	.	T	G	184	PASS	DP=423;AF=0.037825;SB=37;DP4=191,212,15,1
+A_PB1	1378	.	C	A	99	PASS	DP=437;AF=0.027460;SB=25;DP4=200,212,11,1
+A_PB1	1378	.	C	G	114	PASS	DP=437;AF=0.029748;SB=19;DP4=200,212,11,2
+A_PB1	1464	.	A	G	59	PASS	DP=3466;AF=0.006059;SB=9;DP4=2305,1139,18,3
+A_PB1	1554	.	C	T	137	PASS	DP=4414;AF=0.011781;SB=1;DP4=2293,2055,29,23
+A_PB1	1694	.	A	G	665	PASS	DP=6035;AF=0.015576;SB=0;DP4=3535,2400,56,38
+A_PB1	1769	.	T	C	19637	PASS	DP=6094;AF=0.154906;SB=3;DP4=2581,2561,460,484
+A_PB1	1852	.	A	G	47960	PASS	DP=5744;AF=0.335655;SB=0;DP4=1763,2044,897,1031
+A_PB1	2027	.	A	G	504	PASS	DP=5010;AF=0.024351;SB=0;DP4=2277,2603,58,64
+A_PB1	2053	.	G	A	700	PASS	DP=4659;AF=0.022537;SB=3;DP4=2085,2464,44,61

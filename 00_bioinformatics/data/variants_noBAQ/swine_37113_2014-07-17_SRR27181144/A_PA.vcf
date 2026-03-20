@@ -1,0 +1,27 @@
+##fileformat=VCFv4.0
+##fileDate=20251015
+##source=lofreq call -B -f data/IRMA/swine_37113_2014-07-16_SRR27181403/A_PA.fasta data/aligned_reads/swine_37113_2014-07-17_SRR27181144/A_PA.bam 
+##reference=data/IRMA/swine_37113_2014-07-16_SRR27181403/A_PA.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_58,Description="Minimum SNV Quality (Phred) 58">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_PA	134	.	G	T	59	PASS	DP=11373;AF=0.010903;SB=1;DP4=6326,4881,72,52
+A_PA	138	.	C	T	103	PASS	DP=11636;AF=0.011860;SB=3;DP4=6112,5360,78,60
+A_PA	285	.	C	T	681	PASS	DP=8374;AF=0.021734;SB=184;DP4=3926,4256,29,153
+A_PA	286	.	A	G	940	PASS	DP=8218;AF=0.022998;SB=183;DP4=3897,4126,32,157
+A_PA	361	.	G	A	117	PASS	DP=6628;AF=0.010109;SB=49;DP4=3427,3123,17,50
+A_PA	362	.	G	A	97	PASS	DP=6691;AF=0.009117;SB=45;DP4=3411,3211,15,46
+A_PA	363	.	A	G	274	PASS	DP=6700;AF=0.011642;SB=42;DP4=3404,3205,22,56
+A_PA	1565	.	G	A	288	PASS	DP=8349;AF=0.009822;SB=5;DP4=3535,4719,30,52
+A_PA	1820	.	T	A	149	PASS	DP=10038;AF=0.009066;SB=43;DP4=5333,4596,68,23
+A_PA	1821	.	G	A	110	PASS	DP=10107;AF=0.008608;SB=33;DP4=5378,4618,63,24
+A_PA	1823	.	C	T	217	PASS	DP=10147;AF=0.010249;SB=39;DP4=5327,4696,75,29

@@ -1,0 +1,27 @@
+##fileformat=VCFv4.0
+##fileDate=20251015
+##source=lofreq call -B -f data/IRMA/swine_37162_2014-07-16_SRR27180964/A_PB1.fasta data/aligned_reads/swine_37162_2014-07-16_SRR27180964/A_PB1.bam 
+##reference=data/IRMA/swine_37162_2014-07-16_SRR27180964/A_PB1.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_58,Description="Minimum SNV Quality (Phred) 58">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_PB1	269	.	A	G	1286	PASS	DP=43765;AF=0.008957;SB=4;DP4=24861,18445,215,177
+A_PB1	455	.	C	A	3268	PASS	DP=38835;AF=0.020677;SB=67;DP4=16273,21732,270,533
+A_PB1	575	.	G	A	7040	PASS	DP=40312;AF=0.027634;SB=16;DP4=17958,21129,550,564
+A_PB1	750	.	G	C	2007	PASS	DP=35718;AF=0.014558;SB=6;DP4=20879,14221,324,196
+A_PB1	987	.	A	G	106	PASS	DP=34183;AF=0.004768;SB=5;DP4=17005,16949,89,74
+A_PB1	1370	.	A	G	6867	PASS	DP=35361;AF=0.028308;SB=594;DP4=16167,18097,219,782
+A_PB1	1376	.	T	G	924	PASS	DP=35120;AF=0.007574;SB=9;DP4=17108,17697,118,148
+A_PB1	1378	.	C	A	516	PASS	DP=34964;AF=0.007808;SB=3;DP4=16963,17641,140,133
+A_PB1	1408	.	T	C	59	PASS	DP=40139;AF=0.003712;SB=42;DP4=22713,17156,109,40
+A_PB1	1615	.	C	T	214	PASS	DP=50704;AF=0.006055;SB=18;DP4=26928,23289,143,164
+A_PB1	2028	.	C	T	62	PASS	DP=53429;AF=0.003668;SB=160;DP4=23618,29555,145,51

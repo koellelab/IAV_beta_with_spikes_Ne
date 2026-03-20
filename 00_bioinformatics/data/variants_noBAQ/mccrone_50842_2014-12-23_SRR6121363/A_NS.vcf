@@ -1,0 +1,27 @@
+##fileformat=VCFv4.0
+##fileDate=20251016
+##source=lofreq call -B -f data/IRMA/mccrone_50842_2014-12-22_SRR6121383/A_NS.fasta data/aligned_reads/mccrone_50842_2014-12-23_SRR6121363/A_NS.bam 
+##reference=data/IRMA/mccrone_50842_2014-12-22_SRR6121383/A_NS.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_53,Description="Minimum SNV Quality (Phred) 53">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_NS	207	.	G	A	130	PASS	DP=7644;AF=0.003401;SB=10;DP4=7093,517,22,4
+A_NS	240	.	C	T	116	PASS	DP=10491;AF=0.002764;SB=8;DP4=9267,1189,23,6
+A_NS	300	.	G	A	162	PASS	DP=14213;AF=0.003166;SB=5;DP4=10656,3506,31,14
+A_NS	336	.	A	G	130	PASS	DP=15431;AF=0.002333;SB=5;DP4=10159,5227,27,9
+A_NS	344	.	T	C	54	PASS	DP=15427;AF=0.001491;SB=0;DP4=9742,5653,15,8
+A_NS	359	.	A	G	87	PASS	DP=15682;AF=0.002104;SB=0;DP4=9246,6394,20,13
+A_NS	393	.	A	G	59	PASS	DP=16574;AF=0.001810;SB=5;DP4=8581,7963,19,11
+A_NS	425	.	A	G	58	PASS	DP=17036;AF=0.001761;SB=8;DP4=7859,9145,18,12
+A_NS	427	.	G	A	124	PASS	DP=16987;AF=0.002767;SB=2;DP4=7742,9185,19,28
+A_NS	492	.	T	C	106	PASS	DP=15894;AF=0.002139;SB=0;DP4=5530,10327,11,23
+A_NS	661	.	G	A	2297	PASS	DP=5356;AF=0.030246;SB=4;DP4=227,4964,4,158

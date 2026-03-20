@@ -1,0 +1,27 @@
+##fileformat=VCFv4.0
+##fileDate=20251016
+##source=lofreq call -B -f data/IRMA/swine_37351_2014-07-16_SRR27180956/A_HA_H3.fasta data/aligned_reads/swine_37351_2014-07-16_SRR27180956/A_HA_H3.bam 
+##reference=data/IRMA/swine_37351_2014-07-16_SRR27180956/A_HA_H3.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_57,Description="Minimum SNV Quality (Phred) 57">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_HA_H3	6	.	G	A	73	PASS	DP=2448;AF=0.078023;SB=28;DP4=1980,274,182,9
+A_HA_H3	16	.	G	T	71	PASS	DP=3308;AF=0.058646;SB=28;DP4=2709,387,184,10
+A_HA_H3	187	.	T	C	146	PASS	DP=12201;AF=0.007376;SB=18;DP4=7758,4324,69,21
+A_HA_H3	224	.	T	C	356	PASS	DP=14832;AF=0.014159;SB=11;DP4=8689,5864,139,71
+A_HA_H3	388	.	T	C	1366	PASS	DP=17550;AF=0.016866;SB=2;DP4=9351,7851,167,129
+A_HA_H3	649	.	A	G	107	PASS	DP=19554;AF=0.003836;SB=0;DP4=10129,9322,39,36
+A_HA_H3	1047	.	C	A	604	PASS	DP=11477;AF=0.012895;SB=142;DP4=6087,5226,125,23
+A_HA_H3	1053	.	C	A	1514	PASS	DP=11832;AF=0.020030;SB=212;DP4=6083,5507,196,41
+A_HA_H3	1246	.	T	C	219	PASS	DP=11432;AF=0.008310;SB=1;DP4=5083,6238,45,50
+A_HA_H3	1283	.	A	G	152	PASS	DP=10938;AF=0.007405;SB=17;DP4=5455,5377,30,51
+A_HA_H3	1469	.	A	G	170	PASS	DP=11124;AF=0.006203;SB=4;DP4=4189,6851,22,47

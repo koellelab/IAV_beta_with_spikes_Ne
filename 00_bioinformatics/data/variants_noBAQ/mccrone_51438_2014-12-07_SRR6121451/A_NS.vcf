@@ -1,0 +1,27 @@
+##fileformat=VCFv4.0
+##fileDate=20251015
+##source=lofreq call -B -f data/IRMA/mccrone_51438_2014-12-07_SRR6121451/A_NS.fasta data/aligned_reads/mccrone_51438_2014-12-07_SRR6121451/A_NS.bam 
+##reference=data/IRMA/mccrone_51438_2014-12-07_SRR6121451/A_NS.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_53,Description="Minimum SNV Quality (Phred) 53">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_NS	99	.	C	T	219	PASS	DP=932;AF=0.019313;SB=6;DP4=903,11,17,1
+A_NS	154	.	C	T	386	PASS	DP=2804;AF=0.015335;SB=61;DP4=2655,104,32,11
+A_NS	220	.	G	A	791	PASS	DP=6441;AF=0.011489;SB=59;DP4=5755,610,52,22
+A_NS	273	.	T	C	1053	PASS	DP=8910;AF=0.012233;SB=50;DP4=7057,1740,67,42
+A_NS	315	.	G	A	1453	PASS	DP=10222;AF=0.013207;SB=14;DP4=6978,3105,82,53
+A_NS	458	.	A	G	68	PASS	DP=11629;AF=0.002666;SB=45;DP4=4957,6636,25,6
+A_NS	512	.	T	C	8286	PASS	DP=10119;AF=0.051092;SB=3;DP4=3265,6332,184,333
+A_NS	544	.	A	G	714	PASS	DP=8975;AF=0.011253;SB=14;DP4=2392,6480,37,64
+A_NS	552	.	G	A	976	PASS	DP=8597;AF=0.012214;SB=17;DP4=2104,6387,37,68
+A_NS	652	.	C	T	162	PASS	DP=4328;AF=0.006238;SB=10;DP4=266,4034,4,23
+A_NS	718	.	G	A	168	PASS	DP=1517;AF=0.011866;SB=13;DP4=26,1472,2,16

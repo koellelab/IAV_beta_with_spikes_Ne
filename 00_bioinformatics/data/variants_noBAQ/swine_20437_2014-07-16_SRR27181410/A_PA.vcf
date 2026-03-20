@@ -1,0 +1,26 @@
+##fileformat=VCFv4.0
+##fileDate=20251016
+##source=lofreq call -B -f data/IRMA/swine_20437_2014-07-16_SRR27181410/A_PA.fasta data/aligned_reads/swine_20437_2014-07-16_SRR27181410/A_PA.bam 
+##reference=data/IRMA/swine_20437_2014-07-16_SRR27181410/A_PA.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_58,Description="Minimum SNV Quality (Phred) 58">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_PA	329	.	A	G	49314	PASS	DP=22182;AF=0.165765;SB=2147483647;DP4=10670,7764,693,2984
+A_PA	330	.	T	A	47688	PASS	DP=21457;AF=0.161579;SB=2147483647;DP4=10579,7331,616,2851
+A_PA	332	.	A	T	3146	PASS	DP=18968;AF=0.043652;SB=570;DP4=10559,7502,250,578
+A_PA	335	.	A	T	1243	PASS	DP=17781;AF=0.020696;SB=114;DP4=10483,6738,157,211
+A_PA	339	.	A	T	65	PASS	DP=17559;AF=0.011504;SB=184;DP4=9975,7187,54,148
+A_PA	788	.	C	A	65	PASS	DP=12811;AF=0.004293;SB=12;DP4=5134,7612,15,40
+A_PA	957	.	G	T	2670	PASS	DP=11698;AF=0.027868;SB=5;DP4=6596,4772,199,127
+A_PA	1793	.	C	A	308	PASS	DP=20594;AF=0.028892;SB=149;DP4=11437,7756,449,146
+A_PA	1923	.	G	A	97	PASS	DP=35473;AF=0.007386;SB=146;DP4=18367,16724,200,62
+A_PA	1924	.	G	T	230	PASS	DP=35432;AF=0.009088;SB=139;DP4=18347,16671,237,85

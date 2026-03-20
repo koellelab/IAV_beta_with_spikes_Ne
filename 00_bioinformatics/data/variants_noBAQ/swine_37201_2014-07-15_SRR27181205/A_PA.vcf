@@ -1,0 +1,26 @@
+##fileformat=VCFv4.0
+##fileDate=20251016
+##source=lofreq call -B -f data/IRMA/swine_37201_2014-07-15_SRR27181205/A_PA.fasta data/aligned_reads/swine_37201_2014-07-15_SRR27181205/A_PA.bam 
+##reference=data/IRMA/swine_37201_2014-07-15_SRR27181205/A_PA.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_58,Description="Minimum SNV Quality (Phred) 58">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_PA	138	.	C	T	147	PASS	DP=16277;AF=0.011734;SB=51;DP4=9741,6306,146,45
+A_PA	143	.	A	T	81	PASS	DP=16775;AF=0.008525;SB=7;DP4=10020,6552,95,48
+A_PA	147	.	G	T	133	PASS	DP=16461;AF=0.008748;SB=69;DP4=9696,6593,116,28
+A_PA	363	.	A	G	135	PASS	DP=21494;AF=0.006002;SB=0;DP4=10240,11100,62,67
+A_PA	588	.	A	G	75	PASS	DP=18976;AF=0.005006;SB=5;DP4=10932,7907,61,34
+A_PA	611	.	A	G	49314	PASS	DP=18665;AF=0.157568;SB=9;DP4=8294,7363,1511,1430
+A_PA	830	.	C	T	76	PASS	DP=23539;AF=0.003908;SB=5;DP4=10505,12917,36,56
+A_PA	926	.	A	G	201	PASS	DP=21168;AF=0.005669;SB=1;DP4=12920,8100,76,44
+A_PA	1709	.	T	C	49314	PASS	DP=20272;AF=0.151638;SB=4;DP4=9518,7630,1733,1341
+A_PA	1764	.	T	C	548	PASS	DP=20962;AF=0.009780;SB=1;DP4=11682,9046,119,86

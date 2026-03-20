@@ -1,0 +1,25 @@
+##fileformat=VCFv4.0
+##fileDate=20251014
+##source=lofreq call -B -f data/IRMA/swine_37227_2014-07-16_SRR27181596/A_NA_N2.fasta data/aligned_reads/swine_37227_2014-07-16_SRR27181596/A_NA_N2.bam 
+##reference=data/IRMA/swine_37227_2014-07-16_SRR27181596/A_NA_N2.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_56,Description="Minimum SNV Quality (Phred) 56">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_NA_N2	260	.	G	A	84	PASS	DP=85584;AF=0.004674;SB=11;DP4=55444,29488,279,121
+A_NA_N2	274	.	T	C	1971	PASS	DP=97658;AF=0.008837;SB=27;DP4=59365,37215,575,288
+A_NA_N2	434	.	C	T	372	PASS	DP=101246;AF=0.004879;SB=15;DP4=38449,62122,165,329
+A_NA_N2	755	.	C	A	277	PASS	DP=87572;AF=0.005184;SB=77;DP4=41818,45266,158,296
+A_NA_N2	871	.	T	C	2109	PASS	DP=80529;AF=0.008606;SB=6;DP4=33653,46073,308,385
+A_NA_N2	949	.	G	T	210	PASS	DP=76352;AF=0.012770;SB=1796;DP4=45712,29631,155,820
+A_NA_N2	1007	.	A	G	872	PASS	DP=80748;AF=0.007431;SB=4;DP4=45821,34145,333,267
+A_NA_N2	1078	.	G	T	159	PASS	DP=74804;AF=0.003984;SB=59;DP4=35431,39045,184,114
+A_NA_N2	1185	.	A	T	205	PASS	DP=63316;AF=0.008071;SB=83;DP4=22457,40200,121,390

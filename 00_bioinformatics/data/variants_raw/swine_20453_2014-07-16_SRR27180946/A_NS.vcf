@@ -1,0 +1,31 @@
+##fileformat=VCFv4.0
+##fileDate=20251023
+##source=lofreq call --no-default-filter -q 0 -Q 0 -B -a 1 -b 1 -f data/IRMA/swine_20453_2014-07-16_SRR27180946/A_NS.fasta data/aligned_reads/swine_20453_2014-07-16_SRR27180946/A_NS.bam 
+##reference=data/IRMA/swine_20453_2014-07-16_SRR27180946/A_NS.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_NS	127	.	A	C	0	.	DP=416421;AF=0.004618;SB=976;DP4=276203,137978,1684,239
+A_NS	144	.	C	A	13	.	DP=413616;AF=0.002094;SB=599;DP4=268621,143950,774,92
+A_NS	146	.	C	A	0	.	DP=409682;AF=0.001670;SB=194;DP4=263294,145531,551,133
+A_NS	150	.	C	T	0	.	DP=403639;AF=0.001313;SB=26;DP4=258673,144189,374,156
+A_NS	444	.	A	G	0	.	DP=483367;AF=0.002032;SB=1;DP4=242242,239537,499,483
+A_NS	447	.	T	C	0	.	DP=475109;AF=0.001899;SB=1;DP4=238587,234925,448,454
+A_NS	462	.	A	G	0	.	DP=450300;AF=0.001726;SB=1;DP4=221841,227201,378,399
+A_NS	549	.	A	G	278	.	DP=387297;AF=0.003124;SB=36;DP4=190482,195048,533,677
+A_NS	553	.	C	A	0	.	DP=391175;AF=0.004591;SB=2299;DP4=188637,200532,224,1572
+A_NS	605	.	C	A	0	.	DP=345155;AF=0.007298;SB=2147483647;DP4=153387,189052,99,2420
+A_NS	605	.	C	G	0	.	DP=345155;AF=0.000342;SB=236;DP4=153387,189052,4,114
+A_NS	605	.	C	T	0	.	DP=345155;AF=0.000226;SB=60;DP4=153387,189052,14,64
+A_NS	674	.	C	A	0	.	DP=335133;AF=0.004911;SB=1979;DP4=118765,214522,79,1567
+A_NS	793	.	T	C	0	.	DP=119267;AF=0.000344;SB=0;DP4=20831,98340,6,35
+A_NS	798	.	T	C	0	.	DP=112793;AF=0.000319;SB=0;DP4=16586,96151,5,31
+A_NS	810	.	T	G	0	.	DP=81316;AF=0.000394;SB=5;DP4=11590,69656,2,30
+A_NS	818	.	T	G	0	.	DP=61213;AF=0.000278;SB=2;DP4=9880,51298,4,13
+A_NS	834	.	T	A	0	.	DP=49346;AF=0.000223;SB=1;DP4=7250,42084,2,9
+A_NS	836	.	T	A	0	.	DP=48608;AF=0.000144;SB=2;DP4=7023,41574,0,7

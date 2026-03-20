@@ -1,0 +1,26 @@
+##fileformat=VCFv4.0
+##fileDate=20251015
+##source=lofreq call -B -f data/IRMA/swine_37332_2014-07-17_SRR27181353/A_PB1.fasta data/aligned_reads/swine_37332_2014-07-17_SRR27181353/A_PB1.bam 
+##reference=data/IRMA/swine_37332_2014-07-17_SRR27181353/A_PB1.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_58,Description="Minimum SNV Quality (Phred) 58">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_PB1	326	.	A	G	886	PASS	DP=35160;AF=0.010637;SB=13;DP4=17013,17716,164,210
+A_PB1	463	.	C	A	191	PASS	DP=30736;AF=0.007646;SB=118;DP4=12825,17664,47,188
+A_PB1	768	.	G	A	83	PASS	DP=25428;AF=0.004483;SB=11;DP4=14410,10854,75,39
+A_PB1	1186	.	C	T	85	PASS	DP=36998;AF=0.004784;SB=14;DP4=17114,19638,68,109
+A_PB1	1332	.	C	A	61	PASS	DP=40060;AF=0.003944;SB=32;DP4=20957,18936,61,97
+A_PB1	1370	.	A	G	26472	PASS	DP=33666;AF=0.064902;SB=1744;DP4=15407,15973,418,1767
+A_PB1	1376	.	T	G	2309	PASS	DP=34513;AF=0.011938;SB=50;DP4=18442,15583,178,234
+A_PB1	1378	.	C	A	1233	PASS	DP=34253;AF=0.010364;SB=17;DP4=18279,15512,169,186
+A_PB1	1408	.	T	C	69	PASS	DP=39873;AF=0.003511;SB=68;DP4=23941,15709,114,26
+A_PB1	1516	.	A	G	118	PASS	DP=51115;AF=0.003619;SB=27;DP4=28376,22432,82,103

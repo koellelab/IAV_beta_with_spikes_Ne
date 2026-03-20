@@ -1,0 +1,26 @@
+##fileformat=VCFv4.0
+##fileDate=20251016
+##source=lofreq call -B -f data/IRMA/swine_37330_2014-07-14_SRR27180993/A_HA_H3.fasta data/aligned_reads/swine_37330_2014-07-14_SRR27180993/A_HA_H3.bam 
+##reference=data/IRMA/swine_37330_2014-07-14_SRR27180993/A_HA_H3.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_57,Description="Minimum SNV Quality (Phred) 57">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_HA_H3	1	.	A	C	644	PASS	DP=654;AF=0.159021;SB=26;DP4=500,50,103,1
+A_HA_H3	85	.	C	A	578	PASS	DP=8503;AF=0.042103;SB=0;DP4=5743,2216,259,99
+A_HA_H3	1027	.	C	T	26118	PASS	DP=14817;AF=0.103867;SB=55;DP4=7696,5560,797,742
+A_HA_H3	1047	.	C	A	797	PASS	DP=14831;AF=0.012541;SB=59;DP4=8202,6414,137,49
+A_HA_H3	1052	.	T	A	1818	PASS	DP=15459;AF=0.020829;SB=132;DP4=8185,6908,241,81
+A_HA_H3	1053	.	C	A	2341	PASS	DP=15475;AF=0.021648;SB=127;DP4=8191,6930,248,87
+A_HA_H3	1129	.	A	G	165	PASS	DP=15279;AF=0.006414;SB=4;DP4=7239,6862,55,43
+A_HA_H3	1211	.	C	T	4397	PASS	DP=17675;AF=0.034286;SB=16;DP4=9138,7874,297,309
+A_HA_H3	1353	.	T	C	1098	PASS	DP=19715;AF=0.017854;SB=16;DP4=9155,10147,189,163
+A_HA_H3	1447	.	T	C	438	PASS	DP=18401;AF=0.010815;SB=1;DP4=6968,11193,79,120

@@ -1,0 +1,26 @@
+##fileformat=VCFv4.0
+##fileDate=20251014
+##source=lofreq call -B -f data/IRMA/swine_37184_2014-07-15_SRR27180971/A_MP.fasta data/aligned_reads/swine_37184_2014-07-15_SRR27180971/A_MP.bam 
+##reference=data/IRMA/swine_37184_2014-07-15_SRR27180971/A_MP.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_54,Description="Minimum SNV Quality (Phred) 54">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_MP	131	.	A	G	436	PASS	DP=115931;AF=0.010480;SB=143;DP4=85362,29203,781,434
+A_MP	133	.	T	A	963	PASS	DP=117634;AF=0.009929;SB=79;DP4=84090,32210,754,414
+A_MP	134	.	G	T	946	PASS	DP=122538;AF=0.009213;SB=129;DP4=88407,32844,708,421
+A_MP	136	.	C	G	1247	PASS	DP=126059;AF=0.008242;SB=140;DP4=89984,34812,633,406
+A_MP	137	.	T	C	993	PASS	DP=129526;AF=0.007497;SB=147;DP4=89896,38383,563,408
+A_MP	138	.	A	T	857	PASS	DP=129536;AF=0.007457;SB=188;DP4=89958,38348,543,423
+A_MP	141	.	G	A	616	PASS	DP=133547;AF=0.007353;SB=138;DP4=93303,38976,579,403
+A_MP	143	.	C	A	2051	PASS	DP=126834;AF=0.008066;SB=76;DP4=85881,39844,613,410
+A_MP	144	.	A	C	1159	PASS	DP=124897;AF=0.006501;SB=184;DP4=85159,38760,435,377
+A_MP	673	.	T	C	235	PASS	DP=173468;AF=0.002738;SB=1;DP4=84976,87799,238,237

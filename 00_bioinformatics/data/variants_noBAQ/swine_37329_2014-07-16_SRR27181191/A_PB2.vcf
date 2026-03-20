@@ -1,0 +1,27 @@
+##fileformat=VCFv4.0
+##fileDate=20251013
+##source=lofreq call -B -f data/IRMA/swine_37329_2014-07-16_SRR27181191/A_PB2.fasta data/aligned_reads/swine_37329_2014-07-16_SRR27181191/A_PB2.bam 
+##reference=data/IRMA/swine_37329_2014-07-16_SRR27181191/A_PB2.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_58,Description="Minimum SNV Quality (Phred) 58">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_PB2	1	.	A	T	230	PASS	DP=1094;AF=0.106033;SB=7;DP4=857,121,107,9
+A_PB2	145	.	T	G	187	PASS	DP=7842;AF=0.010712;SB=42;DP4=4849,2883,70,14
+A_PB2	146	.	G	T	65	PASS	DP=7767;AF=0.006437;SB=17;DP4=4874,2840,40,10
+A_PB2	246	.	C	T	19848	PASS	DP=7764;AF=0.142968;SB=1;DP4=2900,3743,477,633
+A_PB2	437	.	A	G	93	PASS	DP=7773;AF=0.007204;SB=1;DP4=4185,3523,29,27
+A_PB2	543	.	A	C	1606	PASS	DP=7152;AF=0.036773;SB=7;DP4=3320,3557,138,125
+A_PB2	1188	.	G	A	18501	PASS	DP=7167;AF=0.137854;SB=2;DP4=3558,2604,562,426
+A_PB2	1582	.	A	G	111	PASS	DP=7925;AF=0.008454;SB=1;DP4=3545,4284,32,35
+A_PB2	1636	.	C	T	152	PASS	DP=7269;AF=0.009492;SB=10;DP4=3201,3979,38,31
+A_PB2	1818	.	G	A	137	PASS	DP=8159;AF=0.007109;SB=1;DP4=3470,4616,26,32
+A_PB2	1929	.	A	G	101	PASS	DP=7364;AF=0.007876;SB=7;DP4=3848,3442,36,22

@@ -1,0 +1,26 @@
+##fileformat=VCFv4.0
+##fileDate=20251015
+##source=lofreq call -B -f data/IRMA/swine_37318_2014-07-16_SRR27180931/A_MP.fasta data/aligned_reads/swine_37318_2014-07-17_SRR27181359/A_MP.bam 
+##reference=data/IRMA/swine_37318_2014-07-16_SRR27180931/A_MP.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_54,Description="Minimum SNV Quality (Phred) 54">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_MP	1	.	A	G	376	PASS	DP=16498;AF=0.084131;SB=10;DP4=11938,3167,1069,319
+A_MP	131	.	A	G	484	PASS	DP=193071;AF=0.010701;SB=103;DP4=133364,57370,1580,486
+A_MP	133	.	T	A	1964	PASS	DP=192814;AF=0.010518;SB=205;DP4=130442,60018,1582,446
+A_MP	134	.	G	T	1065	PASS	DP=199707;AF=0.008618;SB=111;DP4=136340,61176,1317,404
+A_MP	136	.	C	G	1956	PASS	DP=205241;AF=0.008302;SB=142;DP4=139233,63960,1314,390
+A_MP	137	.	T	C	1526	PASS	DP=211395;AF=0.007422;SB=135;DP4=139026,70299,1182,387
+A_MP	138	.	A	T	1533	PASS	DP=211456;AF=0.007406;SB=74;DP4=139157,70210,1143,423
+A_MP	141	.	G	A	1418	PASS	DP=217359;AF=0.008093;SB=264;DP4=143824,71369,1382,377
+A_MP	143	.	C	A	3341	PASS	DP=211680;AF=0.007932;SB=174;DP4=137202,72592,1264,415
+A_MP	144	.	A	C	565	PASS	DP=207391;AF=0.004152;SB=13;DP4=135873,70357,539,322

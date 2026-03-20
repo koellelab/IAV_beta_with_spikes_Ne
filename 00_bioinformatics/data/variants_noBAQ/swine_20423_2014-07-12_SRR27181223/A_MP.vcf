@@ -1,0 +1,26 @@
+##fileformat=VCFv4.0
+##fileDate=20251016
+##source=lofreq call -B -f data/IRMA/swine_20423_2014-07-12_SRR27181223/A_MP.fasta data/aligned_reads/swine_20423_2014-07-12_SRR27181223/A_MP.bam 
+##reference=data/IRMA/swine_20423_2014-07-12_SRR27181223/A_MP.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_54,Description="Minimum SNV Quality (Phred) 54">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_MP	131	.	A	G	578	PASS	DP=89324;AF=0.012595;SB=139;DP4=66295,21752,730,395
+A_MP	133	.	T	A	1211	PASS	DP=90279;AF=0.012295;SB=75;DP4=65180,23826,728,382
+A_MP	134	.	G	T	1014	PASS	DP=93964;AF=0.011238;SB=124;DP4=68568,24201,672,384
+A_MP	136	.	C	G	1443	PASS	DP=96121;AF=0.010487;SB=127;DP4=69334,25590,628,380
+A_MP	137	.	T	C	1041	PASS	DP=98884;AF=0.009152;SB=124;DP4=69289,28482,538,367
+A_MP	138	.	A	T	920	PASS	DP=98895;AF=0.009272;SB=161;DP4=69312,28438,531,386
+A_MP	141	.	G	A	765	PASS	DP=101755;AF=0.009169;SB=118;DP4=71729,28861,564,369
+A_MP	143	.	C	A	2155	PASS	DP=94859;AF=0.010236;SB=73;DP4=64274,29542,584,387
+A_MP	144	.	A	C	1364	PASS	DP=93322;AF=0.008272;SB=138;DP4=63752,28679,430,342
+A_MP	673	.	T	C	54	PASS	DP=125970;AF=0.002358;SB=6;DP4=60520,65002,132,165

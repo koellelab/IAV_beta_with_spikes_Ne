@@ -1,0 +1,27 @@
+##fileformat=VCFv4.0
+##fileDate=20251014
+##source=lofreq call -B -f data/IRMA/swine_37363_2014-07-15_SRR27181627/A_PA.fasta data/aligned_reads/swine_37363_2014-07-15_SRR27181627/A_PA.bam 
+##reference=data/IRMA/swine_37363_2014-07-15_SRR27181627/A_PA.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_58,Description="Minimum SNV Quality (Phred) 58">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_PA	270	.	A	G	76	PASS	DP=11189;AF=0.007597;SB=0;DP4=5690,5387,45,40
+A_PA	1152	.	C	T	17519	PASS	DP=6147;AF=0.152432;SB=0;DP4=2602,2594,466,471
+A_PA	1515	.	A	T	62	PASS	DP=10010;AF=0.007393;SB=52;DP4=5518,4411,60,14
+A_PA	1548	.	C	A	79	PASS	DP=9212;AF=0.008359;SB=86;DP4=4147,4970,61,16
+A_PA	1551	.	G	T	75	PASS	DP=9276;AF=0.008193;SB=76;DP4=4220,4971,59,17
+A_PA	1557	.	C	A	83	PASS	DP=9264;AF=0.009175;SB=134;DP4=4077,5094,72,13
+A_PA	1563	.	A	T	79	PASS	DP=9320;AF=0.008047;SB=93;DP4=4092,5135,60,15
+A_PA	1603	.	C	A	112	PASS	DP=9656;AF=0.007664;SB=94;DP4=4292,5290,60,14
+A_PA	1619	.	A	T	134	PASS	DP=9717;AF=0.008027;SB=62;DP4=4308,5318,57,21
+A_PA	1635	.	A	T	137	PASS	DP=9593;AF=0.006463;SB=53;DP4=4413,5110,47,15
+A_PA	1711	.	T	C	221	PASS	DP=7572;AF=0.009245;SB=4;DP4=4329,3164,45,25

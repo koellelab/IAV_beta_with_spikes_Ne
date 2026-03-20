@@ -1,0 +1,25 @@
+##fileformat=VCFv4.0
+##fileDate=20251015
+##source=lofreq call -B -f data/IRMA/swine_37172_2014-07-16_SRR27181413/A_NA_N2.fasta data/aligned_reads/swine_37172_2014-07-16_SRR27181413/A_NA_N2.bam 
+##reference=data/IRMA/swine_37172_2014-07-16_SRR27181413/A_NA_N2.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_56,Description="Minimum SNV Quality (Phred) 56">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_NA_N2	332	.	G	A	13819	PASS	DP=47450;AF=0.030327;SB=15;DP4=22993,22964,762,677
+A_NA_N2	337	.	G	A	181	PASS	DP=47384;AF=0.003820;SB=2;DP4=23535,23616,86,95
+A_NA_N2	374	.	A	G	709	PASS	DP=40835;AF=0.006294;SB=2;DP4=18206,22337,120,137
+A_NA_N2	676	.	C	T	414	PASS	DP=34564;AF=0.006915;SB=23;DP4=15965,18306,89,150
+A_NA_N2	736	.	T	G	16053	PASS	DP=31749;AF=0.048820;SB=2;DP4=14562,15560,760,790
+A_NA_N2	805	.	T	C	86	PASS	DP=36602;AF=0.003251;SB=2;DP4=15553,20902,54,65
+A_NA_N2	835	.	T	C	16458	PASS	DP=35090;AF=0.043374;SB=9;DP4=14862,18671,707,815
+A_NA_N2	892	.	T	C	200	PASS	DP=31960;AF=0.006727;SB=1;DP4=13069,18598,92,123
+A_NA_N2	1076	.	A	G	308	PASS	DP=26998;AF=0.008260;SB=15;DP4=13090,13603,126,97

@@ -1,0 +1,25 @@
+##fileformat=VCFv4.0
+##fileDate=20251015
+##source=lofreq call -B -f data/IRMA/swine_20424_2014-07-12_SRR27181224/A_MP.fasta data/aligned_reads/swine_20424_2014-07-12_SRR27181224/A_MP.bam 
+##reference=data/IRMA/swine_20424_2014-07-12_SRR27181224/A_MP.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_54,Description="Minimum SNV Quality (Phred) 54">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_MP	131	.	A	G	691	PASS	DP=135210;AF=0.012218;SB=253;DP4=99435,33869,1036,616
+A_MP	133	.	T	A	1609	PASS	DP=136616;AF=0.011895;SB=149;DP4=97802,36934,1030,595
+A_MP	134	.	G	T	1546	PASS	DP=141912;AF=0.011056;SB=216;DP4=102508,37604,970,599
+A_MP	136	.	C	G	1980	PASS	DP=145037;AF=0.010060;SB=251;DP4=103527,39786,866,593
+A_MP	137	.	T	C	1452	PASS	DP=149520;AF=0.008929;SB=236;DP4=103353,44450,756,579
+A_MP	138	.	A	T	1274	PASS	DP=149515;AF=0.009043;SB=316;DP4=103442,44345,738,614
+A_MP	141	.	G	A	1074	PASS	DP=153839;AF=0.008931;SB=244;DP4=107102,45030,785,589
+A_MP	143	.	C	A	2979	PASS	DP=143701;AF=0.009791;SB=153;DP4=96095,46072,804,603
+A_MP	144	.	A	C	1779	PASS	DP=141383;AF=0.007950;SB=271;DP4=95288,44763,587,537

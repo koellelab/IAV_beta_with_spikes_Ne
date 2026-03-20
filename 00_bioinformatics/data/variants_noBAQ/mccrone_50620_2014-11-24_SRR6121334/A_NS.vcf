@@ -1,0 +1,27 @@
+##fileformat=VCFv4.0
+##fileDate=20251014
+##source=lofreq call -B -f data/IRMA/mccrone_50620_2014-11-22_SRR6121524/A_NS.fasta data/aligned_reads/mccrone_50620_2014-11-24_SRR6121334/A_NS.bam 
+##reference=data/IRMA/mccrone_50620_2014-11-22_SRR6121524/A_NS.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_53,Description="Minimum SNV Quality (Phred) 53">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_NS	40	.	T	C	73	PASS	DP=131;AF=0.053435;SB=0;DP4=124,0,7,0
+A_NS	49	.	C	G	56	PASS	DP=193;AF=0.031088;SB=0;DP4=186,0,6,0
+A_NS	129	.	A	G	220	PASS	DP=2008;AF=0.012450;SB=7;DP4=1927,56,23,2
+A_NS	333	.	G	A	213	PASS	DP=11206;AF=0.003659;SB=0;DP4=7390,3766,27,14
+A_NS	427	.	A	G	101	PASS	DP=12291;AF=0.002522;SB=1;DP4=5796,6461,16,15
+A_NS	501	.	A	G	61	PASS	DP=11465;AF=0.001832;SB=0;DP4=4151,7290,8,13
+A_NS	530	.	C	T	124	PASS	DP=10384;AF=0.003178;SB=14;DP4=3064,7282,4,29
+A_NS	556	.	G	A	546	PASS	DP=9532;AF=0.007554;SB=3;DP4=2377,7075,21,51
+A_NS	566	.	A	G	1312	PASS	DP=9305;AF=0.012896;SB=2;DP4=2143,7042,31,89
+A_NS	642	.	T	C	117	PASS	DP=5675;AF=0.004229;SB=1;DP4=436,5215,2,22
+A_NS	697	.	G	A	66	PASS	DP=2778;AF=0.004320;SB=5;DP4=82,2683,1,11

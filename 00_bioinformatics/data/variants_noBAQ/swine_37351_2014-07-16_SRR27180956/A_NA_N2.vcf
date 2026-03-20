@@ -1,0 +1,25 @@
+##fileformat=VCFv4.0
+##fileDate=20251016
+##source=lofreq call -B -f data/IRMA/swine_37351_2014-07-16_SRR27180956/A_NA_N2.fasta data/aligned_reads/swine_37351_2014-07-16_SRR27180956/A_NA_N2.bam 
+##reference=data/IRMA/swine_37351_2014-07-16_SRR27180956/A_NA_N2.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_56,Description="Minimum SNV Quality (Phred) 56">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_NA_N2	188	.	C	A	855	PASS	DP=58453;AF=0.008314;SB=6;DP4=37953,19989,306,180
+A_NA_N2	251	.	A	G	587	PASS	DP=72416;AF=0.005524;SB=12;DP4=47941,23981,248,152
+A_NA_N2	367	.	T	C	2324	PASS	DP=95485;AF=0.008745;SB=29;DP4=42262,52289,421,414
+A_NA_N2	379	.	G	A	72	PASS	DP=93286;AF=0.003130;SB=66;DP4=39339,53534,168,124
+A_NA_N2	547	.	T	C	157	PASS	DP=99305;AF=0.004330;SB=14;DP4=53965,44686,257,173
+A_NA_N2	684	.	G	T	2343	PASS	DP=74663;AF=0.011947;SB=15;DP4=32238,41507,423,469
+A_NA_N2	910	.	G	T	177	PASS	DP=67822;AF=0.010999;SB=692;DP4=32649,34375,131,615
+A_NA_N2	1097	.	T	C	3343	PASS	DP=52527;AF=0.014697;SB=9;DP4=24019,27648,381,391
+A_NA_N2	1271	.	T	C	109	PASS	DP=51322;AF=0.004735;SB=9;DP4=13249,37741,52,191

@@ -1,0 +1,23 @@
+##fileformat=VCFv4.0
+##fileDate=20251016
+##source=lofreq call -B -f data/IRMA/swine_37260_2014-07-16_SRR27181172/A_PB1.fasta data/aligned_reads/swine_37260_2014-07-16_SRR27181172/A_PB1.bam 
+##reference=data/IRMA/swine_37260_2014-07-16_SRR27181172/A_PB1.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_58,Description="Minimum SNV Quality (Phred) 58">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_PB1	1370	.	A	G	12351	PASS	DP=27138;AF=0.047166;SB=861;DP4=12658,13123,278,1002
+A_PB1	1376	.	T	G	1616	PASS	DP=28069;AF=0.011436;SB=42;DP4=14694,13012,134,187
+A_PB1	1378	.	C	A	759	PASS	DP=27979;AF=0.010079;SB=22;DP4=14622,12969,126,156
+A_PB1	1408	.	T	C	69	PASS	DP=32024;AF=0.004216;SB=41;DP4=18453,13364,101,34
+A_PB1	1852	.	G	T	84	PASS	DP=51072;AF=0.005502;SB=5;DP4=24279,26412,144,137
+A_PB1	1856	.	A	G	353	PASS	DP=52738;AF=0.011396;SB=218;DP4=25485,26525,414,187
+A_PB1	1857	.	T	A	1325	PASS	DP=52532;AF=0.018522;SB=527;DP4=25211,26237,715,258

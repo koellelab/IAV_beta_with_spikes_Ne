@@ -1,0 +1,27 @@
+##fileformat=VCFv4.0
+##fileDate=20251015
+##source=lofreq call -B -f data/IRMA/swine_37284_2014-07-16_SRR27181599/A_NA_N2.fasta data/aligned_reads/swine_37284_2014-07-17_SRR27180918/A_NA_N2.bam 
+##reference=data/IRMA/swine_37284_2014-07-16_SRR27181599/A_NA_N2.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_56,Description="Minimum SNV Quality (Phred) 56">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_NA_N2	418	.	C	T	319	PASS	DP=107977;AF=0.004279;SB=8;DP4=44656,62702,177,285
+A_NA_N2	464	.	A	G	158	PASS	DP=95897;AF=0.003452;SB=54;DP4=52872,42542,141,190
+A_NA_N2	667	.	C	A	155	PASS	DP=84684;AF=0.004794;SB=61;DP4=39359,44801,140,266
+A_NA_N2	671	.	G	T	118	PASS	DP=80895;AF=0.004784;SB=203;DP4=38078,42398,275,112
+A_NA_N2	751	.	G	T	102	PASS	DP=74044;AF=0.003728;SB=5;DP4=34915,38811,122,154
+A_NA_N2	849	.	A	T	75	PASS	DP=77368;AF=0.002921;SB=37;DP4=37207,39901,81,145
+A_NA_N2	949	.	G	T	63	PASS	DP=73347;AF=0.010921;SB=1399;DP4=44760,27757,144,657
+A_NA_N2	967	.	G	A	271	PASS	DP=71987;AF=0.005223;SB=10;DP4=45292,26155,254,122
+A_NA_N2	1023	.	C	T	107	PASS	DP=82202;AF=0.003552;SB=9;DP4=48415,33384,159,133
+A_NA_N2	1060	.	T	C	59	PASS	DP=81579;AF=0.003457;SB=1;DP4=44865,36265,153,129
+A_NA_N2	1144	.	G	T	77	PASS	DP=70223;AF=0.004016;SB=3;DP4=30028,39858,128,154

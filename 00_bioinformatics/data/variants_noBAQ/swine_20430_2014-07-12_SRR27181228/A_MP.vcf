@@ -1,0 +1,26 @@
+##fileformat=VCFv4.0
+##fileDate=20251016
+##source=lofreq call -B -f data/IRMA/swine_20430_2014-07-12_SRR27181228/A_MP.fasta data/aligned_reads/swine_20430_2014-07-12_SRR27181228/A_MP.bam 
+##reference=data/IRMA/swine_20430_2014-07-12_SRR27181228/A_MP.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_54,Description="Minimum SNV Quality (Phred) 54">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_MP	131	.	A	G	685	PASS	DP=93186;AF=0.012727;SB=189;DP4=69150,22690,751,435
+A_MP	133	.	T	A	1363	PASS	DP=94123;AF=0.012346;SB=110;DP4=68044,24756,745,417
+A_MP	134	.	G	T	1472	PASS	DP=97949;AF=0.011771;SB=139;DP4=71440,25218,732,421
+A_MP	136	.	C	G	1809	PASS	DP=100186;AF=0.010690;SB=165;DP4=72291,26665,654,417
+A_MP	137	.	T	C	1209	PASS	DP=103077;AF=0.009226;SB=164;DP4=72199,29683,551,400
+A_MP	138	.	A	T	1117	PASS	DP=103104;AF=0.009534;SB=231;DP4=72251,29628,547,436
+A_MP	141	.	G	A	882	PASS	DP=106257;AF=0.009232;SB=170;DP4=74901,30112,573,408
+A_MP	143	.	C	A	2439	PASS	DP=98620;AF=0.010150;SB=87;DP4=66734,30783,594,407
+A_MP	144	.	A	C	1485	PASS	DP=97050;AF=0.008243;SB=205;DP4=66220,29892,422,378
+A_MP	705	.	A	T	693	PASS	DP=114952;AF=0.006872;SB=25;DP4=55336,58644,341,449

@@ -1,0 +1,26 @@
+##fileformat=VCFv4.0
+##fileDate=20251016
+##source=lofreq call -B -f data/IRMA/swine_20579_2014-07-13_SRR27180997/A_HA_H3.fasta data/aligned_reads/swine_20579_2014-07-13_SRR27180997/A_HA_H3.bam 
+##reference=data/IRMA/swine_20579_2014-07-13_SRR27180997/A_HA_H3.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_57,Description="Minimum SNV Quality (Phred) 57">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_HA_H3	52	.	A	C	829	PASS	DP=9954;AF=0.051939;SB=36;DP4=7306,2122,436,81
+A_HA_H3	158	.	C	A	1107	PASS	DP=19056;AF=0.014798;SB=0;DP4=11692,7072,177,105
+A_HA_H3	504	.	T	C	538	PASS	DP=25745;AF=0.009322;SB=13;DP4=10437,15002,114,126
+A_HA_H3	673	.	A	G	140	PASS	DP=30650;AF=0.003980;SB=2;DP4=15373,15131,58,64
+A_HA_H3	1047	.	C	A	173	PASS	DP=21439;AF=0.005830;SB=19;DP4=11675,9617,83,42
+A_HA_H3	1052	.	T	A	328	PASS	DP=22103;AF=0.007691;SB=86;DP4=11667,10223,129,41
+A_HA_H3	1053	.	C	A	411	PASS	DP=22115;AF=0.007687;SB=48;DP4=11698,10237,119,51
+A_HA_H3	1077	.	G	T	128	PASS	DP=23062;AF=0.005897;SB=64;DP4=12474,10444,103,33
+A_HA_H3	1172	.	A	T	206	PASS	DP=21607;AF=0.007590;SB=3;DP4=9710,11684,79,85
+A_HA_H3	1295	.	C	T	452	PASS	DP=21293;AF=0.010191;SB=17;DP4=10472,10545,90,127

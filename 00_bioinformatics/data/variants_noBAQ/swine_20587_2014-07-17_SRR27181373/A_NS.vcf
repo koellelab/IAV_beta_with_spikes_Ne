@@ -1,0 +1,26 @@
+##fileformat=VCFv4.0
+##fileDate=20251014
+##source=lofreq call -B -f data/IRMA/swine_20587_2014-07-17_SRR27181373/A_NS.fasta data/aligned_reads/swine_20587_2014-07-17_SRR27181373/A_NS.bam 
+##reference=data/IRMA/swine_20587_2014-07-17_SRR27181373/A_NS.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_54,Description="Minimum SNV Quality (Phred) 54">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_NS	138	.	A	G	1419	PASS	DP=289587;AF=0.009148;SB=45;DP4=180777,105754,1776,873
+A_NS	146	.	C	T	21604	PASS	DP=287101;AF=0.013291;SB=0;DP4=174168,108671,2342,1474
+A_NS	185	.	A	G	16536	PASS	DP=267730;AF=0.018108;SB=22;DP4=134161,128169,2382,2466
+A_NS	275	.	A	G	455	PASS	DP=240681;AF=0.003444;SB=13;DP4=126215,113389,408,421
+A_NS	310	.	A	G	57	PASS	DP=278255;AF=0.003267;SB=4;DP4=137943,138915,438,471
+A_NS	314	.	T	C	694	PASS	DP=284112;AF=0.003569;SB=15;DP4=147735,135086,565,449
+A_NS	447	.	T	C	160	PASS	DP=295909;AF=0.002720;SB=3;DP4=148197,146542,393,412
+A_NS	462	.	A	G	629	PASS	DP=279478;AF=0.003149;SB=3;DP4=136763,141578,420,460
+A_NS	539	.	T	C	304	PASS	DP=242256;AF=0.002712;SB=2;DP4=114169,127231,303,354
+A_NS	588	.	A	G	2521	PASS	DP=221322;AF=0.006131;SB=66;DP4=105030,114662,553,804

@@ -1,0 +1,26 @@
+##fileformat=VCFv4.0
+##fileDate=20251016
+##source=lofreq call -B -f data/IRMA/swine_37158_2014-07-13_SRR27180999/A_MP.fasta data/aligned_reads/swine_37158_2014-07-13_SRR27180999/A_MP.bam 
+##reference=data/IRMA/swine_37158_2014-07-13_SRR27180999/A_MP.fasta
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Raw Depth">
+##INFO=<ID=AF,Number=1,Type=Float,Description="Allele Frequency">
+##INFO=<ID=SB,Number=1,Type=Integer,Description="Phred-scaled strand bias at this position">
+##INFO=<ID=DP4,Number=4,Type=Integer,Description="Counts for ref-forward bases, ref-reverse, alt-forward and alt-reverse bases">
+##INFO=<ID=INDEL,Number=0,Type=Flag,Description="Indicates that the variant is an INDEL.">
+##INFO=<ID=CONSVAR,Number=0,Type=Flag,Description="Indicates that the variant is a consensus variant (as opposed to a low frequency variant).">
+##INFO=<ID=HRUN,Number=1,Type=Integer,Description="Homopolymer length to the right of report indel position">
+##FILTER=<ID=min_dp_10,Description="Minimum Coverage 10">
+##FILTER=<ID=sb_fdr,Description="Strand-Bias Multiple Testing Correction: fdr corr. pvalue > 0.001000">
+##FILTER=<ID=min_snvqual_54,Description="Minimum SNV Quality (Phred) 54">
+##FILTER=<ID=min_indelqual_20,Description="Minimum Indel Quality (Phred) 20">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+A_MP	131	.	A	G	528	PASS	DP=97589;AF=0.011958;SB=141;DP4=72121,24130,754,413
+A_MP	133	.	T	A	1005	PASS	DP=98830;AF=0.011545;SB=85;DP4=71052,26474,739,402
+A_MP	134	.	G	T	1015	PASS	DP=102576;AF=0.010802;SB=129;DP4=74468,26854,701,407
+A_MP	136	.	C	G	1332	PASS	DP=104982;AF=0.009735;SB=140;DP4=75357,28394,627,395
+A_MP	137	.	T	C	872	PASS	DP=108269;AF=0.008451;SB=154;DP4=75292,31819,526,389
+A_MP	138	.	A	T	756	PASS	DP=108273;AF=0.008451;SB=200;DP4=75333,31760,509,406
+A_MP	141	.	G	A	586	PASS	DP=111503;AF=0.008466;SB=153;DP4=78068,32201,550,394
+A_MP	143	.	C	A	2083	PASS	DP=104313;AF=0.009577;SB=99;DP4=70246,32969,582,417
+A_MP	144	.	A	C	1104	PASS	DP=102749;AF=0.007426;SB=205;DP4=69753,32084,396,367
+A_MP	187	.	G	A	3492	PASS	DP=115617;AF=0.010111;SB=45;DP4=68944,45328,776,393
